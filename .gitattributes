@@ -1,0 +1,24 @@
+# Normalize line endings to LF across all platforms.
+# This overrides individual core.autocrlf settings.
+* text=auto eol=lf
+
+# Explicitly mark binary files so Git never touches their endings.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.svg binary
+*.pdf binary
+*.zip binary
+*.jar binary
+*.aar binary
+*.apk binary
+*.keystore binary
+*.jks binary
+*.so binary
+
+# Windows-only scripts keep CRLF on checkout (if any).
+*.bat text eol=crlf
+*.cmd text eol=crlf
