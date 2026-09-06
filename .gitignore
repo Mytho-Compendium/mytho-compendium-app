@@ -1,0 +1,40 @@
+# Gradle
+.gradle/
+/build/
+*/build/
+
+# Local configuration (jamais commit — contient les paths SDK/NDK locaux)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/*
+!.idea/codeStyles/
+!.idea/runConfigurations/
+*.iml
+.navigation/
+
+# Native build (si un jour tu touches au NDK/C++)
+.externalNativeBuild/
+.cxx/
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Signing (à ne JAMAIS versionner)
+*.jks
+*.keystore
+keystore.properties
+
+# Logs & profiling
+/captures/
+*.hprof
+
+# OS
+.DS_Store
+
+# Generated files
+/bin/
+/gen/
